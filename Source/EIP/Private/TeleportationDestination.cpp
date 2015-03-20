@@ -8,6 +8,6 @@ ATeleportationDestination::ATeleportationDestination(const class FPostConstructI
 	: Super(PCIP)
 {
 	_light = PCIP.CreateDefaultSubobject<UPointLightComponent>(this, TEXT("Light"));
-	_light->Intensity = 100000;
+	_light->Intensity = 1000;
 	RootComponent = _light;
 }
